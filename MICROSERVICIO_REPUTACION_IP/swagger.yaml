@@ -1,0 +1,15 @@
+openapi: 3.0.0
+info:
+  title: VirusTotal API Microservice
+  version: 1.0.0
+paths:
+  /getIPInfo:
+    get:
+      summary: Get VirusTotal IP Information
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object

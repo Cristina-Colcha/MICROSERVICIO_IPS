@@ -1,0 +1,25 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "title": "VirusTotal URL Scanner API",
+      "version": "1.0.0",
+      "description": "API para escanear una URL usando VirusTotal"
+    },
+    "basePath": "/",
+    "paths": {
+      "/scan-url": {
+        "get": {
+          "summary": "Escanear una URL con VirusTotal",
+          "responses": {
+            "200": {
+              "description": "Datos del escaneo",
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  

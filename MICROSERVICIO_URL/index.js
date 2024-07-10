@@ -23,6 +23,9 @@ app.get('/scan-url', async (req, res) => {
     res.status(500).json({ error: 'Failed to fetch data' });
   }
 });
+app.get('/', (req, res) => {
+  res.redirect('/scan-url');
+});
 
 // Swagger setup
 const swaggerUi = require('swagger-ui-express');
